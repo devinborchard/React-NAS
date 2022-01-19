@@ -1,0 +1,128 @@
+
+
+
+
+:root {
+  --blue: #502561;
+}
+
+.checkBox{
+  height: 24px;
+  width : 24px;
+  border-radius: 30;
+  border : #000000;
+  background-color: transparent;
+}
+
+
+.p {
+  font-size: 15px;
+}
+
+.box {
+  background-color: #e0e0e0;
+  margin-left: auto;
+  margin-right: auto;
+  width : 70%;
+  border-radius: 25px;
+
+}
+
+.selectMultiple {
+  height: 90px;
+}
+
+/*----------------------------------Errors*/
+.errors{
+  color: red;
+  font-size: 30px;
+}
+.errors ul{
+  text-align: center;
+  list-style-type: none;
+}
+
+
+/*-----------------------------------Pin*/
+.pinEntry input{
+  font-size: 20px;
+  color: #000000;
+  width: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pinEntry table{
+  margin-left:auto; 
+  margin-right:auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.pinEntry p{
+  font-size: 20px;
+}
+
+/*-----------------------------------Form*/
+
+.title{
+  color: var(--blue)
+}
+
+.button{
+  background-color: var(--blue); /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.bodyDiv{
+  background-color: #e0e0e0;
+  width : 100%;
+  border-radius: 15px;
+}
+
+.submissionDiv table{
+  margin-left:auto; 
+  margin-right:auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.submissionDiv td{
+  margin-left:auto; 
+  margin-right:auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.heading{
+  color : #ffffff;
+  background-color: var(--blue);
+  width: 100%;
+}
+
+.heading h2{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.footing {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--blue);
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
