@@ -3,52 +3,35 @@ import FileUpload from '../FileUpload'
 import Foot from '../Foot'
 import Head from '../Head'
 
-//import DateEntry from '../DateEntry';
-//import {loadTable} from '../loadTable' //temporary for creating OTD table
-
+//Home component that will call all of there components on the page
 
 class Home extends Component{
 
     constructor(props){
         super(props)
         this.state = {
-            newElement : '',
-            list: [],
-            ip : this.props.ip,
-            back_port :this.props.back_port,
-            employee : this.props.employee,
-            permission : this.props.permission
+            ip : '000.000.0.00', //ip for the computer running the server
+            back_port : '3001', //port you will be running the server on
         }
     }
     
     componentDidMount(){
-        //loadTable() // temporary for creating OTD
-
         console.log('REACT WORKING');
-        
-        ///////////////////////
-        
-        ///////////////////////
-       
     }
 
-    
-    
-
-
-    
-
     render(){
-
         return(
             <div>
-                <Head/>
-                <FileUpload/>
-                <Foot/>
+                {/* Header for page */}
+                <Head/> 
 
+                {/* main application component for page */}
+                <FileUpload ip = {this.state.ip} back_port = {this.state.back_port}/>
+                
+                {/* Footer for page */}
+                <Foot/>
             </div>
         )
-
     }
 
 }

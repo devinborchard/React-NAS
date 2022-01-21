@@ -8,11 +8,12 @@ app.use(cors());
 
 var router = express.Router();
 
+//route to store a file in the storage directory
+//im not sure whats going on with this code but it works, I found it on the internet
+
 const storage = multer.diskStorage({
 
   destination:(req, file, cb)=>{
-
-    console.log('GOT HERE')
 
     cb(null, 'directory')
   },
