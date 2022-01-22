@@ -6,6 +6,10 @@ The app is built using React and NodeJs to run the front and back end. The base 
 All files stored on the hosts specified storage directory will apear to users as a list on the page. Each item on the list has a check box for selecting that item.
 Once an item is selected the user can download or delete the item. New files can be added by using the file selection form at the top of the application.
 
+Before starting the application the host computer's ip address has to be entered in the React-NAS/my-app/src/components/pages/Home.js file as the value for the ip variable. By default the app runs on ports 3000 and 3001 for the front and back end servers respectively. If you want to change these ports they will have to be changed in both the Home.js file and the batch files.
+
+The application can be started using the batch files in the batch folder. The StartNode file will open a command prompt that runs the backend NodeJs server. The StartReact file will open a prompt that runs the React front end. The Run file will run both of these files at the same time to start the app with one file.
+
 I know I could have achieved a very similar system with less work by setting up file-sharing between computers on my network, but this solution was much more fun, and let me
 learn about file uploads and downloads in a React web application.
 
